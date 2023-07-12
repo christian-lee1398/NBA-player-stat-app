@@ -22,8 +22,8 @@ form.addEventListener('submit', function (e) {
 
             const entries = Object.entries(statObj)
             console.log(entries)
-            const statList = document.getElementById('#result');
-            for (i = 0; i < entries.length; ++i) {
+            const statList = document.querySelector('#result');
+            for (i = 0; i < entries.length; i++) {
                 let li = document.createElement('li');
                 li.innerText = entries[i];
                 statList.appendChild(li);
