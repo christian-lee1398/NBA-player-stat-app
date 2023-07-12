@@ -12,12 +12,12 @@ form.addEventListener('submit', function (e) {
             const statValues = Object.values(stats)
 
             const statObj = {
-                points: `${statValues[27]}`,
-                assists: `${statValues[22]}`,
-                rebounds: `${statValues[21]}`,
-                threePct: `${statValues[11]}`,
-                fgPct: `${statValues[15]}`,
-                steals: `${statValues[23]}`,
+                'Points': `${statValues[27]}`,
+                'Assists': `${statValues[22]}`,
+                'Rebounds': `${statValues[21]}`,
+                '3-point %': `${statValues[11]}`,
+                'FG %': `${statValues[15]}`,
+                'Steals': `${statValues[23]}`,
             }
 
             const entries = Object.entries(statObj)
@@ -35,9 +35,3 @@ form.addEventListener('submit', function (e) {
             console.log(err);
         })
 })
-
-// const displayStats = (stats) => {
-//     for (let stat of stats) {
-//         console.log(stat)
-//     }
-// }
