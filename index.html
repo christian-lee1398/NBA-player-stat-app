@@ -5,20 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Better Baller</title>
 </head>
 
 <body>
-    <div>
+    <div class="main">
         <h1>Who's the Better Baller?</h1>
-        <form id="searchForm">
-            <input type="text" placeholder="Enter NBA Player" name="query">
-            <!-- <input type="text" placeholder="Enter NBA Player" name="query"> -->
-            <button>Compare</button>
-        </form>
-        <ul id="result">
+        <div class="forms-container">
+            <div class="statForm">
+                <form id="searchForm1">
+                    <input type="text" placeholder="Enter NBA Player" name="query" required>
+                    <button>Compare</button>
+                </form>
+                <ul id="result1">
 
-        </ul>
+                </ul>
+            </div>
+            <div class="statForm">
+                <form id="searchForm2">
+                    <input type="text" placeholder="Enter NBA Player" name="query" required>
+                    <button>Compare</button>
+                </form>
+                <ul id="result2">
+
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="index.js"></script>
